@@ -62,8 +62,19 @@ class App extends Component {
       }
     })
     .then(response => response.json())
-    .then(result => this.fetchAlbums())
+    .then(result => this.displayNewAlbums())
     .catch(error => console.log(error))
+  }
+
+  displayNewAlbums = () => {
+    this.fetchAlbums()
+    this.setState({
+      album: '',
+      genre: '',
+      rating: '',
+      artist: '',
+      year: ''
+    })
   }
 
   render() {
