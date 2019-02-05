@@ -18,7 +18,6 @@ class Album extends Component {
   }
 
   fetchTracks = () => {
-    console.log('fetching tracks')
     const { albumId } = this.props; 
     fetch(`http://localhost:3000/api/v1/albums/${albumId}/tracks`)
       .then(response => response.json())
@@ -38,10 +37,18 @@ class Album extends Component {
     this.setState({tracks})
   }
 
+  deleteTrack = (id) => {
+    fetch(`http://localhost:3000/api/v1/tracks/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(result => this.fetchTracks())
+    .catch(error => console.log(error))
+  }
+
   render() {
     const {album, genre, artist} = this.state.album;
-    const tracks = this.state.tracks.map(track => <li key={track.id}> {track.name} </li>)
-    console.log(this.state.album)
+    let tracks = this.state.tracks.map(track => <li key={track.id}> {track.name} <button onClick={()=> this.deleteTrack(track.id)}> delete</button></li>)
     return (
       <div>
         <h1> {album} </h1>
