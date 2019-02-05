@@ -5,7 +5,9 @@ class Album extends Component {
     super(props)
     this.state = {
       album: {},
-      tracks: []
+      tracks: [],
+      name: '',
+      duration: ''
     }
   }
 
@@ -46,6 +48,30 @@ class Album extends Component {
     .catch(error => console.log(error))
   }
 
+  addNewTrack = (e, albumId) => {
+    e.preventDefault()
+    let trackRequest = {
+      name: this.state.name,
+      duration: this.state.duration
+    }
+    fetch(`http://localhost:3000/api/v1/albums/${albumId}/tracks`, {
+      method: 'POST',
+      body: JSON.stringify(trackRequest),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(response => response.json())
+    .then(result => this.fetchTracks())
+    .catch(error => console.log(error))
+  }
+
+  handleChange = (e) => {
+    const {name, value} = e.target;
+    this.setState({
+      [name]: value
+    })
+  }
 
   render() {
     const {album, genre, artist, id} = this.state.album;
@@ -57,6 +83,15 @@ class Album extends Component {
         <p> artist: {artist} </p>
         <h2> TRACKS </h2>
         <ul> {tracks} </ul>
+        <form onSubmit={(e) => this.addNewTrack(e, id)}> add a track:
+          <input placeholder='name' onChange={this.handleChange}
+          name='name' 
+          value={this.state.name} />
+          <input placeholder='duration' 
+          name='duration'
+          onChange={this.handleChange} value={this.state.duration} />
+          <button type='submit'> submit </button>
+        </form>
       </div>
     )
   }
