@@ -13,7 +13,8 @@ class App extends Component {
       genre: '',
       rating: '',
       artist: '',
-      year: ''
+      year: '',
+      displayTracks: false
     }
   }
 
@@ -78,12 +79,24 @@ class App extends Component {
     })
   }
 
+  toggleDisplay = () => {
+    this.setState({
+      displayTracks: !this.state.displayTracks
+    })
+  }
+
+  routeHome = () => {
+    this.setState({
+      displayTracks: false
+    })
+  }
+
+
   render() {
     let {album, artist, year, genre, rating} = this.state;
     return (
       <div className="App">
-        <h1 className='title'> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
-
+        <h1 className='title' onClick={this.routeHome}> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
         <form onSubmit={(e) => this.handleSubmit(e)}> 
           add a new album:
           <input placeholder='album name' 
@@ -110,7 +123,11 @@ class App extends Component {
           > 
           add new album </button>
         </form>
-        <AlbumContainer albums={this.state.albums} deleteAlbum={this.deleteAlbum}/>
+        <AlbumContainer albums={this.state.albums} 
+        deleteAlbum={this.deleteAlbum}
+        toggleDisplay={this.toggleDisplay}
+        displayTracks={this.state.displayTracks} 
+        />
       </div>
     );
   }
