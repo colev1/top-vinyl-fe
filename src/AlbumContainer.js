@@ -12,28 +12,29 @@ class AlbumContainer extends Component {
   }
 
   displayAlbumInfo = (id) => {
-    console.log(id)
     this.setState({
       displayTracks: true,
       albumId: id
     })
   }
+
   
   render () {
   let albumsDisplay = this.props.albums.map(album => {
     return <div key={album.id} 
-    className='album' 
-    onClick={() => this.displayAlbumInfo(album.id)}>
-      <h1> {album.album} </h1>
+    className='album' >
+      <h1 onClick={() => this.displayAlbumInfo(album.id)}> {album.album}  
+      </h1>
       <h3> {album.artist} </h3>
       <p> {album.genre} </p>
+      <button onClick={()=>this.props.deleteAlbum(album.id)}> delete </button>
     </div>
     }
   )
 
   if(this.state.displayTracks) {
    return (
-      <Album albumId={this.state.albumId}/>
+      <Album albumId={this.state.albumId} />
    ) 
   } else {
     return (

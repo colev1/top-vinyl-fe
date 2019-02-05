@@ -46,8 +46,9 @@ class Album extends Component {
     .catch(error => console.log(error))
   }
 
+
   render() {
-    const {album, genre, artist} = this.state.album;
+    const {album, genre, artist, id} = this.state.album;
     let tracks = this.state.tracks.map(track => <li key={track.id}> {track.name} <button onClick={()=> this.deleteTrack(track.id)}> delete</button></li>)
     return (
       <div>

@@ -28,10 +28,19 @@ class App extends Component {
     })
   }
 
+  deleteAlbum = (id) => {
+    fetch(`http://localhost:3000/api/v1/albums/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(result => this.fetchAlbums())
+    .catch(error => console.log(error))
+  }
+
   render() {
     return (
       <div className="App">
-        <AlbumContainer albums={this.state.albums} />
+        <AlbumContainer albums={this.state.albums} deleteAlbum={this.deleteAlbum}/>
       </div>
     );
   }
