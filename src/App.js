@@ -115,7 +115,7 @@ class App extends Component {
           name="year"
           value={year}
           onChange={this.handleChange} />
-          <input placeholder='rating'
+          <input placeholder='rating 0-5'
           name="rating"
           value={rating}
           onChange={this.handleChange} />
