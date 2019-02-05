@@ -62,8 +62,7 @@ class App extends Component {
       }
     })
     .then(response => response.json())
-    .then(result => console.log(result))
-    .then(this.fetchAlbums())
+    .then(result => this.fetchAlbums())
     .catch(error => console.log(error))
   }
 
