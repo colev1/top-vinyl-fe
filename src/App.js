@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {AlbumContainer} from './AlbumContainer'
+import AlbumContainer from './AlbumContainer'
 import './App.css';
 
 class App extends Component {
