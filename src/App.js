@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AlbumContainer from './AlbumContainer'
 import './App.css';
+import vinyl from './vinyl.png'
 
 class App extends Component {
   constructor () {
@@ -81,7 +82,7 @@ class App extends Component {
     let {album, artist, year, genre, rating} = this.state;
     return (
       <div className="App">
-        <h1> TOP VINYL </h1>
+        <h1 className='title'> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
 
         <form onSubmit={(e) => this.handleSubmit(e)}> 
           add a new album:
