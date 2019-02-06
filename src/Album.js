@@ -13,7 +13,6 @@ class Album extends Component {
 
   componentDidMount() {
     if(this.props.albumId) {
-      console.log(this.props.albumId)
       this.fetchTracks()
       this.fetchAlbum()
     }

@@ -6,3 +6,8 @@
 .album {
   width: 300px;
 }
+
+h1:hover {
+  color: #B4C5E4;
+  cursor: pointer;
+}

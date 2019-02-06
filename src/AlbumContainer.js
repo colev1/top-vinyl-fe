@@ -6,16 +6,15 @@ class AlbumContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayTracks: false,
       albumId: null
     }
   }
 
   displayAlbumInfo = (id) => {
     this.setState({
-      displayTracks: true,
       albumId: id
     })
+    this.props.toggleDisplay();
   }
 
   
@@ -32,7 +31,7 @@ class AlbumContainer extends Component {
     }
   )
 
-  if(this.state.displayTracks) {
+  if(this.props.displayTracks) {
    return (
       <Album albumId={this.state.albumId} />
    ) 
