@@ -47,6 +47,6 @@ input, button {
 }
 
 button:hover {
-  background-color: #B4C5E4;
+  background-color: rgb(92, 112, 151);
   cursor: pointer;
 }

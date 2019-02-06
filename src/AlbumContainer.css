@@ -1,13 +1,21 @@
 .albums-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .album {
-  width: 300px;
+  width: 30vw;
+  border: solid 1px black;
+  margin: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h1:hover {
-  color: #B4C5E4;
+  color: rgb(92, 112, 151);
   cursor: pointer;
 }
