@@ -23,7 +23,8 @@ class App extends Component {
   }
 
   fetchAlbums = () => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`)
+    console.log(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`)
+    fetch(`https://top-vinyl.herokuapp.com/api/v1/albums`)
       .then(response => response.json())
       .then(result => this.addAlbums(result))
       .catch(error => console.log(error))
