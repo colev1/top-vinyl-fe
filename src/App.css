@@ -17,25 +17,23 @@ img {
 h1 {
   margin: 0;
   padding-bottom: 20px;
-  
 }
 
 .title {
-  font-size: 48px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  font-size: 48px;
+  justify-content: center;
 }
 
 form {
+  align-items: center;
+  background-color: #B4C5E4;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   font-size: 24px;
-  background-color: #B4C5E4;
+  justify-content: space-around;
   padding: 10px;
-
 }
 
 input, button {
@@ -45,8 +43,8 @@ input, button {
 
 button:hover {
   background-color: rgb(15, 13, 57);
-  cursor: pointer;
   color: white;
+  cursor: pointer;
 }
 
 header {
