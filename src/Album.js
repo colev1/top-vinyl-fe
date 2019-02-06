@@ -74,14 +74,27 @@ class Album extends Component {
 
   render() {
     const {album, genre, artist, id} = this.state.album;
-    let tracks = this.state.tracks.map(track => <li key={track.id}> {track.name} <button onClick={()=> this.deleteTrack(track.id)}> delete</button></li>)
+    let tracks = this.state.tracks.map(track => {
+      return (
+        <li key={track.id} className='track'> 
+          <h4 className='track-name'> {track.name} <span className='track-duration'> {track.duration} </span></h4>
+          <button className='delete-track-btn' onClick={()=> this.deleteTrack(track.id)}> delete</button>
+        </li>
+      )
+    })
+
     return (
       <div className='vinyl-container'>
-        <h1> {album} </h1>
-        <p> genre: {genre} </p>
-        <p> artist: {artist} </p>
-        <h2> TRACKS </h2>
-        <ul> {tracks} </ul>
+        <section className='track-container'>
+          <article className='album-info'>
+            <h1 className='album-name'> {album} </h1>
+            <p className='artist'> by: {artist} </p>
+            <p className='album-genre'> genre: {genre} </p>
+          </article>
+          <article className='track-list'>
+            <ul> {tracks} </ul>
+          </article>
+        </section>
         <form onSubmit={(e) => this.addNewTrack(e, id)}> add a track:
           <input placeholder='name' onChange={this.handleChange}
           name='name' 
@@ -91,6 +104,7 @@ class Album extends Component {
           onChange={this.handleChange} value={this.state.duration} />
           <button type='submit'> submit </button>
         </form>
+        <button className='view-albums-button' onClick={() => this.props.toggleDisplay()}>View All Ablums</button>
       </div>
     )
   }
