@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Album.css'
 
 class Album extends Component {
   constructor(props) {
@@ -76,7 +77,7 @@ class Album extends Component {
     const {album, genre, artist, id} = this.state.album;
     let tracks = this.state.tracks.map(track => <li key={track.id}> {track.name} <button onClick={()=> this.deleteTrack(track.id)}> delete</button></li>)
     return (
-      <div>
+      <div className='vinyl-container'>
         <h1> {album} </h1>
         <p> genre: {genre} </p>
         <p> artist: {artist} </p>
