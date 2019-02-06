@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   fetchAlbums = () => {
-    console.log(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`)
     fetch(`https://top-vinyl.herokuapp.com/api/v1/albums`)
       .then(response => response.json())
       .then(result => this.addAlbums(result))
@@ -37,7 +36,7 @@ class App extends Component {
   }
 
   deleteAlbum = (id) => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums/${id}`, {
+    fetch(`https://top-vinyl.herokuapp.com/api/v1/albums/${id}`, {
       method: 'DELETE'
     })
     .then(response => response.json())
@@ -57,7 +56,7 @@ class App extends Component {
     const {artist, genre, year, album} = this.state;
     const rating = parseInt(this.state.rating)
     const requestBody = {artist, genre, year, rating, album};
-    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`, {
+    fetch(`https://top-vinyl.herokuapp.com/api/v1/albums`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
