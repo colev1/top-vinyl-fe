@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   fetchAlbums = () => {
-    fetch('http://localhost:3000/api/v1/albums')
+    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`)
       .then(response => response.json())
       .then(result => this.addAlbums(result))
       .catch(error => console.log(error))
@@ -36,7 +36,7 @@ class App extends Component {
   }
 
   deleteAlbum = (id) => {
-    fetch(`http://localhost:3000/api/v1/albums/${id}`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums/${id}`, {
       method: 'DELETE'
     })
     .then(response => response.json())
@@ -56,7 +56,7 @@ class App extends Component {
     const {artist, genre, year, album} = this.state;
     const rating = parseInt(this.state.rating)
     const requestBody = {artist, genre, year, rating, album};
-    fetch('http://localhost:3000/api/v1/albums', {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
