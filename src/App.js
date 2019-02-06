@@ -3,6 +3,7 @@ import AlbumContainer from './AlbumContainer'
 import './App.css';
 import vinyl from './vinyl.png'
 
+
 class App extends Component {
   constructor () {
     super()
@@ -19,6 +20,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
+    console.log(process.env.REACT_APP_BACKEND_URL)
     this.fetchAlbums()
   }
 
