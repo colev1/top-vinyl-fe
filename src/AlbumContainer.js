@@ -22,7 +22,7 @@ class AlbumContainer extends Component {
   let albumsDisplay = this.props.albums.map(album => {
     return <div key={album.id} 
     className='album' >
-      <h1 onClick={() => this.displayAlbumInfo(album.id)}> {album.album}  
+      <h1 onClick={() => this.displayAlbumInfo(album.id)}> {album.album.toUpperCase()}  
       </h1>
       <h3> {album.artist} </h3>
       <p> {album.genre} </p>

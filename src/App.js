@@ -91,38 +91,39 @@ class App extends Component {
     })
   }
 
-
   render() {
     let {album, artist, year, genre, rating} = this.state;
     return (
       <div className="App">
-        <h1 className='title' onClick={this.routeHome}> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
-        <form onSubmit={(e) => this.handleSubmit(e)}> 
-          add a new album:
-          <input placeholder='album name' 
-          name="album"
-          value={album}
-          onChange={this.handleChange} />
-          <input placeholder='artist'
-          name="artist"
-          value={artist}
-          onChange={this.handleChange} />
-          <input placeholder='genre'
-          name="genre"
-          value={genre}
-          onChange={this.handleChange} />
-          <input placeholder='year'
-          name="year"
-          value={year}
-          onChange={this.handleChange} />
-          <input placeholder='rating 0-5'
-          name="rating"
-          value={rating}
-          onChange={this.handleChange} />
-          <button type="submit"
-          > 
-          add new album </button>
-        </form>
+        <header>
+          <h1 className='title' onClick={this.routeHome}> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
+            add a new album:
+          <form onSubmit={(e) => this.handleSubmit(e)}> 
+            <input placeholder='album name' 
+            name="album"
+            value={album}
+            onChange={this.handleChange} />
+            <input placeholder='artist'
+            name="artist"
+            value={artist}
+            onChange={this.handleChange} />
+            <input placeholder='genre'
+            name="genre"
+            value={genre}
+            onChange={this.handleChange} />
+            <input placeholder='year'
+            name="year"
+            value={year}
+            onChange={this.handleChange} />
+            <input placeholder='rating 0-5'
+            name="rating"
+            value={rating}
+            onChange={this.handleChange} />
+            <button type="submit"
+            > 
+            add new album </button>
+          </form>
+        </header>
         <AlbumContainer albums={this.state.albums} 
         deleteAlbum={this.deleteAlbum}
         toggleDisplay={this.toggleDisplay}
