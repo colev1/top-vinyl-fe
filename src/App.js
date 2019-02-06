@@ -102,23 +102,28 @@ class App extends Component {
             <input placeholder='album name' 
             name="album"
             value={album}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} 
+            className='album-input' />
             <input placeholder='artist'
             name="artist"
             value={artist}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} 
+            className='artist-input' />
             <input placeholder='genre'
             name="genre"
             value={genre}
-            onChange={this.handleChange} />
+            onChange={this.handleChange}
+            className='genre-input' />
             <input placeholder='year'
             name="year"
             value={year}
-            onChange={this.handleChange} />
+            onChange={this.handleChange}
+            className='year-input' />
             <input placeholder='rating 0-5'
             name="rating"
             value={rating}
-            onChange={this.handleChange} />
+            onChange={this.handleChange}
+            className='rating-input' />
             <button type="submit"
             > 
             add new album </button>

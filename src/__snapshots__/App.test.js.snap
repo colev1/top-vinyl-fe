@@ -36,30 +36,35 @@ ShallowWrapper {
             onSubmit={[Function]}
           >
             <input
+              className="album-input"
               name="album"
               onChange={[Function]}
               placeholder="album name"
               value=""
             />
             <input
+              className="artist-input"
               name="artist"
               onChange={[Function]}
               placeholder="artist"
               value=""
             />
             <input
+              className="genre-input"
               name="genre"
               onChange={[Function]}
               placeholder="genre"
               value=""
             />
             <input
+              className="year-input"
               name="year"
               onChange={[Function]}
               placeholder="year"
               value=""
             />
             <input
+              className="rating-input"
               name="rating"
               onChange={[Function]}
               placeholder="rating 0-5"
@@ -105,30 +110,35 @@ ShallowWrapper {
               onSubmit={[Function]}
             >
               <input
+                className="album-input"
                 name="album"
                 onChange={[Function]}
                 placeholder="album name"
                 value=""
               />
               <input
+                className="artist-input"
                 name="artist"
                 onChange={[Function]}
                 placeholder="artist"
                 value=""
               />
               <input
+                className="genre-input"
                 name="genre"
                 onChange={[Function]}
                 placeholder="genre"
                 value=""
               />
               <input
+                className="year-input"
                 name="year"
                 onChange={[Function]}
                 placeholder="year"
                 value=""
               />
               <input
+                className="rating-input"
                 name="rating"
                 onChange={[Function]}
                 placeholder="rating 0-5"
@@ -187,30 +197,35 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
+                  className="album-input"
                   name="album"
                   onChange={[Function]}
                   placeholder="album name"
                   value=""
                 />,
                 <input
+                  className="artist-input"
                   name="artist"
                   onChange={[Function]}
                   placeholder="artist"
                   value=""
                 />,
                 <input
+                  className="genre-input"
                   name="genre"
                   onChange={[Function]}
                   placeholder="genre"
                   value=""
                 />,
                 <input
+                  className="year-input"
                   name="year"
                   onChange={[Function]}
                   placeholder="year"
                   value=""
                 />,
                 <input
+                  className="rating-input"
                   name="rating"
                   onChange={[Function]}
                   placeholder="rating 0-5"
@@ -231,6 +246,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "className": "album-input",
                   "name": "album",
                   "onChange": [Function],
                   "placeholder": "album name",
@@ -245,6 +261,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "className": "artist-input",
                   "name": "artist",
                   "onChange": [Function],
                   "placeholder": "artist",
@@ -259,6 +276,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "className": "genre-input",
                   "name": "genre",
                   "onChange": [Function],
                   "placeholder": "genre",
@@ -273,6 +291,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "className": "year-input",
                   "name": "year",
                   "onChange": [Function],
                   "placeholder": "year",
@@ -287,6 +306,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "className": "rating-input",
                   "name": "rating",
                   "onChange": [Function],
                   "placeholder": "rating 0-5",
@@ -355,30 +375,35 @@ ShallowWrapper {
               onSubmit={[Function]}
             >
               <input
+                className="album-input"
                 name="album"
                 onChange={[Function]}
                 placeholder="album name"
                 value=""
               />
               <input
+                className="artist-input"
                 name="artist"
                 onChange={[Function]}
                 placeholder="artist"
                 value=""
               />
               <input
+                className="genre-input"
                 name="genre"
                 onChange={[Function]}
                 placeholder="genre"
                 value=""
               />
               <input
+                className="year-input"
                 name="year"
                 onChange={[Function]}
                 placeholder="year"
                 value=""
               />
               <input
+                className="rating-input"
                 name="rating"
                 onChange={[Function]}
                 placeholder="rating 0-5"
@@ -424,30 +449,35 @@ ShallowWrapper {
                 onSubmit={[Function]}
               >
                 <input
+                  className="album-input"
                   name="album"
                   onChange={[Function]}
                   placeholder="album name"
                   value=""
                 />
                 <input
+                  className="artist-input"
                   name="artist"
                   onChange={[Function]}
                   placeholder="artist"
                   value=""
                 />
                 <input
+                  className="genre-input"
                   name="genre"
                   onChange={[Function]}
                   placeholder="genre"
                   value=""
                 />
                 <input
+                  className="year-input"
                   name="year"
                   onChange={[Function]}
                   placeholder="year"
                   value=""
                 />
                 <input
+                  className="rating-input"
                   name="rating"
                   onChange={[Function]}
                   placeholder="rating 0-5"
@@ -506,30 +536,35 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
+                    className="album-input"
                     name="album"
                     onChange={[Function]}
                     placeholder="album name"
                     value=""
                   />,
                   <input
+                    className="artist-input"
                     name="artist"
                     onChange={[Function]}
                     placeholder="artist"
                     value=""
                   />,
                   <input
+                    className="genre-input"
                     name="genre"
                     onChange={[Function]}
                     placeholder="genre"
                     value=""
                   />,
                   <input
+                    className="year-input"
                     name="year"
                     onChange={[Function]}
                     placeholder="year"
                     value=""
                   />,
                   <input
+                    className="rating-input"
                     name="rating"
                     onChange={[Function]}
                     placeholder="rating 0-5"
@@ -550,6 +585,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "className": "album-input",
                     "name": "album",
                     "onChange": [Function],
                     "placeholder": "album name",
@@ -564,6 +600,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "className": "artist-input",
                     "name": "artist",
                     "onChange": [Function],
                     "placeholder": "artist",
@@ -578,6 +615,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "className": "genre-input",
                     "name": "genre",
                     "onChange": [Function],
                     "placeholder": "genre",
@@ -592,6 +630,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "className": "year-input",
                     "name": "year",
                     "onChange": [Function],
                     "placeholder": "year",
@@ -606,6 +645,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "className": "rating-input",
                     "name": "rating",
                     "onChange": [Function],
                     "placeholder": "rating 0-5",
