@@ -33,7 +33,7 @@ class AlbumContainer extends Component {
 
   if(this.props.displayTracks) {
    return (
-      <Album albumId={this.state.albumId} />
+      <Album albumId={this.state.albumId} toggleDisplay={this.props.toggleDisplay} />
    ) 
   } else {
     return (
