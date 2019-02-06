@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Album.css';
 
 class Album extends Component {
   constructor(props) {
