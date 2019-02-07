@@ -133,4 +133,37 @@ describe('App', () => {
       expect(spy).toHaveBeenCalled()
     })
   })
+
+  describe('fetchAlbums', () => {
+    it('should call fetch with the correct params and fire addAlbums', async () => {
+      const mockAlbums = {albums: [{name: 'This Albun'}, {name: 'That Album'}]}
+      window.fetch = jest.fn().mockImplementation(
+        () => Promise.resolve({
+          json: () => Promise.resolve(mockAlbums),
+          ok: true
+        })
+      )
+      const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums'
+      const wrapper = shallow(<App />)
+
+      await wrapper.instance().fetchAlbums()
+
+      expect(window.fetch).toHaveBeenCalledWith(mockUrl)
+    })
+  })
+
+  describe('addAlbums', () => {
+    it('should set state', () => {
+      const wrapper = shallow(<App />)
+      const mockAlbums = [{name: 'This Album'}, {name: 'That Album'}]
+
+      wrapper.instance().addAlbums(mockAlbums)
+
+      expect(wrapper.state().albums).toEqual(mockAlbums)
+    })
+  })
+
+  describe('deleteAlbum', () => {
+    
+  })
 })
