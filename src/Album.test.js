@@ -34,4 +34,21 @@ describe('Album', () => {
     expect(spyFetchTracks).toHaveBeenCalled()
     expect(spyFetchAlbum).toHaveBeenCalled()
   })
+
+  describe('fetchTracks', () => {
+    it('should call fetch with the correct params', () => {
+      const mockTracks = [{name: 'this track'}]
+      const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1/tracks'
+      window.fetch = jest.fn().mockImplementation(
+        () => Promise.resolve({
+          json: () => Promise.resolve(mockTacks),
+          ok: true
+        })
+      )
+      
+      wrapper.instance().fetchTracks()
+
+      expect(window.fetch).toHaveBeenCalledWith(mockUrl)
+    })
+  })
 })
