@@ -164,6 +164,101 @@ describe('App', () => {
   })
 
   describe('deleteAlbum', () => {
-    
+    it('should call fetch with the correct params', async () => {
+      const mockDeletedId = {id: 1}
+      const mockMethod = {
+        method: 'DELETE'
+      }
+      const mockId = 1
+      const wrapper = shallow(<App />)
+      window.fetch = jest.fn().mockImplementation(
+        () => Promise.resolve({
+          json: () => Promise.resolve(mockDeletedId),
+          ok: true
+        })
+        )
+      const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1'
+        
+      wrapper.instance().deleteAlbum(mockId)
+
+      expect(window.fetch).toHaveBeenCalledWith(mockUrl, mockMethod)
+    })
+  })
+
+  describe('handleChange', () => {
+    it('should set state of artist', () => {
+      const wrapper = shallow(<App />)
+      const event = {
+        target: {
+          name: 'artist',
+          value: 'Beyonce'
+        }
+      }
+      const expected = 'Beyonce'
+
+      wrapper.instance().handleChange(event)
+
+      expect(wrapper.state().artist).toEqual(expected)
+    })
+
+    it('should set state of year', () => {
+      const wrapper = shallow(<App />)
+      const event = {
+        target: {
+          name: 'year',
+          value: '1999'
+        }
+      }
+      const expected = '1999'
+
+      wrapper.instance().handleChange(event)
+
+      expect(wrapper.state().year).toEqual(expected)
+    })
+
+    it('should set state of album', () => {
+      const wrapper = shallow(<App />)
+      const event = {
+        target: {
+          name: 'album',
+          value: 'New Album'
+        }
+      }
+      const expected = 'New Album'
+
+      wrapper.instance().handleChange(event)
+
+      expect(wrapper.state().album).toEqual(expected)
+    })
+
+    it('should set state of genre', () => {
+      const wrapper = shallow(<App />)
+      const event = {
+        target: {
+          name: 'genre',
+          value: 'Pop'
+        }
+      }
+      const expected = 'Pop'
+
+      wrapper.instance().handleChange(event)
+
+      expect(wrapper.state().genre).toEqual(expected)
+    })
+
+    it('should set state of rating', () => {
+      const wrapper = shallow(<App />)
+      const event = {
+        target: {
+          name: 'rating',
+          value: '3.33'
+        }
+      }
+      const expected = '3.33'
+
+      wrapper.instance().handleChange(event)
+
+      expect(wrapper.state().rating).toEqual(expected)
+    })
   })
 })
