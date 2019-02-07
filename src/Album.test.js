@@ -70,13 +70,15 @@ describe('Album', () => {
   })
 
   describe('displayTracks', () => {
-    const mockTracks = [{name: 'this track'}]
-    const mockId = 1
-    const mockToggle = jest.fn()
-    const wrapper = shallow(<Album albumId={ mockId } tiggleDisplay={ mockToggle } />)
-    
-    wrapper.instance().displayTracks(mockTracks)
-
-    expect(wrapper.state().tracks).toEqual(mockTracks)
+    it('should set state', () => {
+      const mockTracks = [{name: 'this track'}]
+      const mockId = 1
+      const mockToggle = jest.fn()
+      const wrapper = shallow(<Album albumId={ mockId } tiggleDisplay={ mockToggle } />)
+      
+      wrapper.instance().displayTracks(mockTracks)
+  
+      expect(wrapper.state().tracks).toEqual(mockTracks)
+    })
   })
 })
