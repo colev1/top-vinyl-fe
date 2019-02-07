@@ -26,7 +26,7 @@ class App extends Component {
     fetch(`https://top-vinyl.herokuapp.com/api/v1/albums`)
       .then(response => response.json())
       .then(result => this.addAlbums(result))
-      .catch(error => console.log(error))
+      .catch(error => this.setState({error: 'Error loading albums'}))
   }
 
   addAlbums = (albums) => {
