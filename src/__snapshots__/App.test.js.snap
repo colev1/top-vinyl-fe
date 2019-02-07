@@ -33,6 +33,7 @@ ShallowWrapper {
           </h1>
           add a new album:
           <form
+            className="album-form"
             onSubmit={[Function]}
           >
             <input
@@ -71,9 +72,10 @@ ShallowWrapper {
               value=""
             />
             <button
+              className="submit-btn"
               type="submit"
             >
-              add new album 
+              add new album
             </button>
           </form>
         </header>,
@@ -107,6 +109,7 @@ ShallowWrapper {
             </h1>,
             "add a new album:",
             <form
+              className="album-form"
               onSubmit={[Function]}
             >
               <input
@@ -145,9 +148,10 @@ ShallowWrapper {
                 value=""
               />
               <button
+                className="submit-btn"
                 type="submit"
               >
-                add new album 
+                add new album
               </button>
             </form>,
           ],
@@ -232,11 +236,13 @@ ShallowWrapper {
                   value=""
                 />,
                 <button
+                  className="submit-btn"
                   type="submit"
                 >
-                  add new album 
+                  add new album
                 </button>,
               ],
+              "className": "album-form",
               "onSubmit": [Function],
             },
             "ref": null,
@@ -321,11 +327,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "add new album ",
+                  "children": "add new album",
+                  "className": "submit-btn",
                   "type": "submit",
                 },
                 "ref": null,
-                "rendered": "add new album ",
+                "rendered": "add new album",
                 "type": "button",
               },
             ],
@@ -372,6 +379,7 @@ ShallowWrapper {
             </h1>
             add a new album:
             <form
+              className="album-form"
               onSubmit={[Function]}
             >
               <input
@@ -410,9 +418,10 @@ ShallowWrapper {
                 value=""
               />
               <button
+                className="submit-btn"
                 type="submit"
               >
-                add new album 
+                add new album
               </button>
             </form>
           </header>,
@@ -446,6 +455,7 @@ ShallowWrapper {
               </h1>,
               "add a new album:",
               <form
+                className="album-form"
                 onSubmit={[Function]}
               >
                 <input
@@ -484,9 +494,10 @@ ShallowWrapper {
                   value=""
                 />
                 <button
+                  className="submit-btn"
                   type="submit"
                 >
-                  add new album 
+                  add new album
                 </button>
               </form>,
             ],
@@ -571,11 +582,13 @@ ShallowWrapper {
                     value=""
                   />,
                   <button
+                    className="submit-btn"
                     type="submit"
                   >
-                    add new album 
+                    add new album
                   </button>,
                 ],
+                "className": "album-form",
                 "onSubmit": [Function],
               },
               "ref": null,
@@ -660,11 +673,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "add new album ",
+                    "children": "add new album",
+                    "className": "submit-btn",
                     "type": "submit",
                   },
                   "ref": null,
-                  "rendered": "add new album ",
+                  "rendered": "add new album",
                   "type": "button",
                 },
               ],

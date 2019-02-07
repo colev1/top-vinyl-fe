@@ -98,7 +98,7 @@ class App extends Component {
         <header>
           <h1 className='title' onClick={this.routeHome}> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
             add a new album:
-          <form onSubmit={(e) => this.handleSubmit(e)}> 
+          <form onSubmit={(e) => this.handleSubmit(e)} className='album-form'> 
             <input placeholder='album name' 
             name="album"
             value={album}
@@ -124,9 +124,9 @@ class App extends Component {
             value={rating}
             onChange={this.handleChange}
             className='rating-input' />
-            <button type="submit"
-            > 
-            add new album </button>
+            <button type="submit" className='submit-btn'> 
+            add new album 
+            </button>
           </form>
         </header>
         <AlbumContainer albums={this.state.albums} 

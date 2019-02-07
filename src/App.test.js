@@ -30,7 +30,7 @@ describe('App', () => {
     expect(wrapper.state().displayTracks).toBe(false)
   })
 
-  it('should fire handleChange on change of the album input and update the state', () => {
+  it('should fire handleChange on change of the album input', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     const event = {
       target: {
@@ -44,10 +44,9 @@ describe('App', () => {
     wrapper.find('.album-input').simulate('change', event)
 
     expect(spy).toHaveBeenCalled()
-    expect(wrapper.state().album).toEqual(expected)
   })
 
-  it('should fire handleChange on change of the artist input and update the state', () => {
+  it('should fire handleChange on change of the artist input', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     const event = {
       target: {
@@ -61,10 +60,9 @@ describe('App', () => {
     wrapper.find('.artist-input').simulate('change', event)
 
     expect(spy).toHaveBeenCalled()
-    expect(wrapper.state().artist).toEqual(expected)
   })
 
-  it('should fire handleChange on change of the genre input and update state', () => {
+  it('should fire handleChange on change of the genre input', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     const event = {
       target: {
@@ -78,10 +76,9 @@ describe('App', () => {
     wrapper.find('.genre-input').simulate('change', event)
 
     expect(spy).toHaveBeenCalled()
-    expect(wrapper.state().genre).toEqual(expected)
   })
 
-  it('should fire handleChange on change of the year input and update state', () => {
+  it('should fire handleChange on change of the year input', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     const event = {
       target: {
@@ -95,10 +92,9 @@ describe('App', () => {
     wrapper.find('.year-input').simulate('change', event)
 
     expect(spy).toHaveBeenCalled()
-    expect(wrapper.state().year).toEqual(expected)
   })
 
-  it('should fire handleChange on change od the rating input and update state', () => {
+  it('should fire handleChange on change of the rating input', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange')
     const event = {
       target: {
@@ -106,12 +102,35 @@ describe('App', () => {
         value: 3.24
       }
     }
-    const expected = '3.24'
+    const expected = 3.24
     wrapper.instance().forceUpdate()
 
     wrapper.find('.rating-input').simulate('change', event)
 
     expect(spy).toHaveBeenCalled()
-    expect(wrapper.state().rating).toEqual(expected)
+  })
+
+  it('should fire handleSubmit on submit of form', () => {
+    const spy = jest.spyOn(wrapper.instance(), 'handleSubmit')
+    const event = {
+      preventDefault: jest.fn()
+    }
+    wrapper.instance().forceUpdate()
+
+    wrapper.find('.album-form').simulate('submit', event)
+
+    expect(spy).toHaveBeenCalled()
+  })
+
+  describe('componentDidMount', () => {
+    it('should fire fetchAlbums', () => {
+      const wrapper = shallow(<App />)
+      const spy = jest.spyOn(wrapper.instance(), 'fetchAlbums')
+      wrapper.instance().forceUpdate()
+
+      wrapper.instance().componentDidMount()
+
+      expect(spy).toHaveBeenCalled()
+    })
   })
 })
