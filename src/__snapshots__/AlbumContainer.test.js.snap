@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AlbumContainer
+    albums={
+      Array [
+        Object {
+          "album": "This Album",
+          "artist": "This Artist",
+          "genre": "Pop",
+          "rating": "3.33",
+          "year": "1991",
+        },
+      ]
+    }
+    deleteAlbum={[MockFunction]}
+    displayTracks={false}
+    toggleDisplay={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="album"
+        >
+          <h1
+            onClick={[Function]}
+          >
+             
+            THIS ALBUM
+          </h1>
+          <h3>
+             
+            This Artist
+             
+          </h3>
+          <p>
+             
+            Pop
+             
+          </p>
+          <button
+            onClick={[Function]}
+          >
+             delete 
+          </button>
+        </div>,
+      ],
+      "className": "albums-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              onClick={[Function]}
+            >
+               
+              THIS ALBUM
+            </h1>,
+            <h3>
+               
+              This Artist
+               
+            </h3>,
+            <p>
+               
+              Pop
+               
+            </p>,
+            <button
+              onClick={[Function]}
+            >
+               delete 
+            </button>,
+          ],
+          "className": "album",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "THIS ALBUM",
+              ],
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "THIS ALBUM",
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "This Artist",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "This Artist",
+              " ",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "Pop",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "Pop",
+              " ",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " delete ",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": " delete ",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="album"
+          >
+            <h1
+              onClick={[Function]}
+            >
+               
+              THIS ALBUM
+            </h1>
+            <h3>
+               
+              This Artist
+               
+            </h3>
+            <p>
+               
+              Pop
+               
+            </p>
+            <button
+              onClick={[Function]}
+            >
+               delete 
+            </button>
+          </div>,
+        ],
+        "className": "albums-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                onClick={[Function]}
+              >
+                 
+                THIS ALBUM
+              </h1>,
+              <h3>
+                 
+                This Artist
+                 
+              </h3>,
+              <p>
+                 
+                Pop
+                 
+              </p>,
+              <button
+                onClick={[Function]}
+              >
+                 delete 
+              </button>,
+            ],
+            "className": "album",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "THIS ALBUM",
+                ],
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "THIS ALBUM",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "This Artist",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "This Artist",
+                " ",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Pop",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Pop",
+                " ",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " delete ",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": " delete ",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

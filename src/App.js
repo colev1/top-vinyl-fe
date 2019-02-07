@@ -27,7 +27,7 @@ class App extends Component {
     fetch(`${process.env.REACT_APP_BACKEND_URL}api/v1/albums`)
       .then(response => response.json())
       .then(result => this.addAlbums(result))
-      .catch(error => console.log(error))
+      .catch(error => this.setState({error: 'Error loading albums'}))
   }
 
   addAlbums = (albums) => {
@@ -99,30 +99,35 @@ class App extends Component {
         <header>
           <h1 className='title' onClick={this.routeHome}> <img src={vinyl} alt='Vinyl'/> TOP VINYL </h1>
             add a new album:
-          <form onSubmit={(e) => this.handleSubmit(e)}> 
+          <form onSubmit={(e) => this.handleSubmit(e)} className='album-form'> 
             <input placeholder='album name' 
             name="album"
             value={album}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} 
+            className='album-input' />
             <input placeholder='artist'
             name="artist"
             value={artist}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} 
+            className='artist-input' />
             <input placeholder='genre'
             name="genre"
             value={genre}
-            onChange={this.handleChange} />
+            onChange={this.handleChange}
+            className='genre-input' />
             <input placeholder='year'
             name="year"
             value={year}
-            onChange={this.handleChange} />
+            onChange={this.handleChange}
+            className='year-input' />
             <input placeholder='rating 0-5'
             name="rating"
             value={rating}
-            onChange={this.handleChange} />
-            <button type="submit"
-            > 
-            add new album </button>
+            onChange={this.handleChange}
+            className='rating-input' />
+            <button type="submit" className='submit-btn'> 
+            add new album 
+            </button>
           </form>
         </header>
         <AlbumContainer albums={this.state.albums} 

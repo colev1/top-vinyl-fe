@@ -1,0 +1,730 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header>
+          <h1
+            className="title"
+            onClick={[Function]}
+          >
+             
+            <img
+              alt="Vinyl"
+              src="vinyl.png"
+            />
+             TOP VINYL 
+          </h1>
+          add a new album:
+          <form
+            className="album-form"
+            onSubmit={[Function]}
+          >
+            <input
+              className="album-input"
+              name="album"
+              onChange={[Function]}
+              placeholder="album name"
+              value=""
+            />
+            <input
+              className="artist-input"
+              name="artist"
+              onChange={[Function]}
+              placeholder="artist"
+              value=""
+            />
+            <input
+              className="genre-input"
+              name="genre"
+              onChange={[Function]}
+              placeholder="genre"
+              value=""
+            />
+            <input
+              className="year-input"
+              name="year"
+              onChange={[Function]}
+              placeholder="year"
+              value=""
+            />
+            <input
+              className="rating-input"
+              name="rating"
+              onChange={[Function]}
+              placeholder="rating 0-5"
+              value=""
+            />
+            <button
+              className="submit-btn"
+              type="submit"
+            >
+              add new album
+            </button>
+          </form>
+        </header>,
+        <AlbumContainer
+          albums={Array []}
+          deleteAlbum={[Function]}
+          displayTracks={false}
+          toggleDisplay={[Function]}
+        />,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+              onClick={[Function]}
+            >
+               
+              <img
+                alt="Vinyl"
+                src="vinyl.png"
+              />
+               TOP VINYL 
+            </h1>,
+            "add a new album:",
+            <form
+              className="album-form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="album-input"
+                name="album"
+                onChange={[Function]}
+                placeholder="album name"
+                value=""
+              />
+              <input
+                className="artist-input"
+                name="artist"
+                onChange={[Function]}
+                placeholder="artist"
+                value=""
+              />
+              <input
+                className="genre-input"
+                name="genre"
+                onChange={[Function]}
+                placeholder="genre"
+                value=""
+              />
+              <input
+                className="year-input"
+                name="year"
+                onChange={[Function]}
+                placeholder="year"
+                value=""
+              />
+              <input
+                className="rating-input"
+                name="rating"
+                onChange={[Function]}
+                placeholder="rating 0-5"
+                value=""
+              />
+              <button
+                className="submit-btn"
+                type="submit"
+              >
+                add new album
+              </button>
+            </form>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                <img
+                  alt="Vinyl"
+                  src="vinyl.png"
+                />,
+                " TOP VINYL ",
+              ],
+              "className": "title",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Vinyl",
+                  "src": "vinyl.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              " TOP VINYL ",
+            ],
+            "type": "h1",
+          },
+          "add a new album:",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="album-input"
+                  name="album"
+                  onChange={[Function]}
+                  placeholder="album name"
+                  value=""
+                />,
+                <input
+                  className="artist-input"
+                  name="artist"
+                  onChange={[Function]}
+                  placeholder="artist"
+                  value=""
+                />,
+                <input
+                  className="genre-input"
+                  name="genre"
+                  onChange={[Function]}
+                  placeholder="genre"
+                  value=""
+                />,
+                <input
+                  className="year-input"
+                  name="year"
+                  onChange={[Function]}
+                  placeholder="year"
+                  value=""
+                />,
+                <input
+                  className="rating-input"
+                  name="rating"
+                  onChange={[Function]}
+                  placeholder="rating 0-5"
+                  value=""
+                />,
+                <button
+                  className="submit-btn"
+                  type="submit"
+                >
+                  add new album
+                </button>,
+              ],
+              "className": "album-form",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "album-input",
+                  "name": "album",
+                  "onChange": [Function],
+                  "placeholder": "album name",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "artist-input",
+                  "name": "artist",
+                  "onChange": [Function],
+                  "placeholder": "artist",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "genre-input",
+                  "name": "genre",
+                  "onChange": [Function],
+                  "placeholder": "genre",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "year-input",
+                  "name": "year",
+                  "onChange": [Function],
+                  "placeholder": "year",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "rating-input",
+                  "name": "rating",
+                  "onChange": [Function],
+                  "placeholder": "rating 0-5",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "add new album",
+                  "className": "submit-btn",
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "add new album",
+                "type": "button",
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "albums": Array [],
+          "deleteAlbum": [Function],
+          "displayTracks": false,
+          "toggleDisplay": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h1
+              className="title"
+              onClick={[Function]}
+            >
+               
+              <img
+                alt="Vinyl"
+                src="vinyl.png"
+              />
+               TOP VINYL 
+            </h1>
+            add a new album:
+            <form
+              className="album-form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="album-input"
+                name="album"
+                onChange={[Function]}
+                placeholder="album name"
+                value=""
+              />
+              <input
+                className="artist-input"
+                name="artist"
+                onChange={[Function]}
+                placeholder="artist"
+                value=""
+              />
+              <input
+                className="genre-input"
+                name="genre"
+                onChange={[Function]}
+                placeholder="genre"
+                value=""
+              />
+              <input
+                className="year-input"
+                name="year"
+                onChange={[Function]}
+                placeholder="year"
+                value=""
+              />
+              <input
+                className="rating-input"
+                name="rating"
+                onChange={[Function]}
+                placeholder="rating 0-5"
+                value=""
+              />
+              <button
+                className="submit-btn"
+                type="submit"
+              >
+                add new album
+              </button>
+            </form>
+          </header>,
+          <AlbumContainer
+            albums={Array []}
+            deleteAlbum={[Function]}
+            displayTracks={false}
+            toggleDisplay={[Function]}
+          />,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+                onClick={[Function]}
+              >
+                 
+                <img
+                  alt="Vinyl"
+                  src="vinyl.png"
+                />
+                 TOP VINYL 
+              </h1>,
+              "add a new album:",
+              <form
+                className="album-form"
+                onSubmit={[Function]}
+              >
+                <input
+                  className="album-input"
+                  name="album"
+                  onChange={[Function]}
+                  placeholder="album name"
+                  value=""
+                />
+                <input
+                  className="artist-input"
+                  name="artist"
+                  onChange={[Function]}
+                  placeholder="artist"
+                  value=""
+                />
+                <input
+                  className="genre-input"
+                  name="genre"
+                  onChange={[Function]}
+                  placeholder="genre"
+                  value=""
+                />
+                <input
+                  className="year-input"
+                  name="year"
+                  onChange={[Function]}
+                  placeholder="year"
+                  value=""
+                />
+                <input
+                  className="rating-input"
+                  name="rating"
+                  onChange={[Function]}
+                  placeholder="rating 0-5"
+                  value=""
+                />
+                <button
+                  className="submit-btn"
+                  type="submit"
+                >
+                  add new album
+                </button>
+              </form>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  <img
+                    alt="Vinyl"
+                    src="vinyl.png"
+                  />,
+                  " TOP VINYL ",
+                ],
+                "className": "title",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Vinyl",
+                    "src": "vinyl.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                " TOP VINYL ",
+              ],
+              "type": "h1",
+            },
+            "add a new album:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="album-input"
+                    name="album"
+                    onChange={[Function]}
+                    placeholder="album name"
+                    value=""
+                  />,
+                  <input
+                    className="artist-input"
+                    name="artist"
+                    onChange={[Function]}
+                    placeholder="artist"
+                    value=""
+                  />,
+                  <input
+                    className="genre-input"
+                    name="genre"
+                    onChange={[Function]}
+                    placeholder="genre"
+                    value=""
+                  />,
+                  <input
+                    className="year-input"
+                    name="year"
+                    onChange={[Function]}
+                    placeholder="year"
+                    value=""
+                  />,
+                  <input
+                    className="rating-input"
+                    name="rating"
+                    onChange={[Function]}
+                    placeholder="rating 0-5"
+                    value=""
+                  />,
+                  <button
+                    className="submit-btn"
+                    type="submit"
+                  >
+                    add new album
+                  </button>,
+                ],
+                "className": "album-form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "album-input",
+                    "name": "album",
+                    "onChange": [Function],
+                    "placeholder": "album name",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "artist-input",
+                    "name": "artist",
+                    "onChange": [Function],
+                    "placeholder": "artist",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "genre-input",
+                    "name": "genre",
+                    "onChange": [Function],
+                    "placeholder": "genre",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "year-input",
+                    "name": "year",
+                    "onChange": [Function],
+                    "placeholder": "year",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "rating-input",
+                    "name": "rating",
+                    "onChange": [Function],
+                    "placeholder": "rating 0-5",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "add new album",
+                    "className": "submit-btn",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "add new album",
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "albums": Array [],
+            "deleteAlbum": [Function],
+            "displayTracks": false,
+            "toggleDisplay": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
