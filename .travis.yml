@@ -10,3 +10,7 @@ deploy:
   provider: heroku
   api_key:
     secure: cu8EhPS2SCrLRf9fBxkDTXP4vtTGW576TL0xm9C+valYNwqsHx7A8h7OKFc+pDPOHlHMT7FHfYR/Qc88FZCAunU6njMDaGDdd8525zrDkJf5kfEaQXutLd6OOZpArcp7R1wHsAfj6PY72mEeFmcUnTPesVV/VO4p/2yvpMkgSdDMLHyRIcNRBppJxPK1Rwp89srmMUscV5BICH0wajgGAOsYJNprNRbPQDuoirkHXAOJ6eQi1iI7Gc0+7JiQYs+zUrUHCSlFc6L2CPWVlndx6NG/fvAzsWrgiHscbwZkpuQQws/tFerHi8LMFNpvv6HgPBznefWRLneiKeuETUIygpxnCRHQJgJiWjA8qQnxoGcSwVR60INuPVQ0n1tWghvqdATXE9Qbn+t4w2kIIXCKlO4S0RdZaT6Y/6RTs+ONiMW13pKjbuRI1THTY5WZjklhqpxejkDxK6JcF31s/7azHmFX8qe/MApnsKiSKVo0YCLjz5uMzgnT63CjcC1a4+QgCXJCuMJBHrJO2OQiEC5/eZLu+wMy3hkwAOqxyZr1s14mo4oiDdGuKBUkMyW+GMoVH/wPwL9OdY1ceTJpFXUEZ0HGfERh+i30hb6tnNtX3N1kHSmFu/4wW/cNmP37tiyemJ0cs01r3C3lZEy3XGuQvfNIeSLsoc6YkJ46QBgDhQA=
+    app: top-vinyl-frontend
+    skip_cleanup: true
+    on:
+      branch: master
