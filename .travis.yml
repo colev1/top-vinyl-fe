@@ -1,16 +1,12 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
 notifications:
   email: false
 deploy:
   provider: heroku
   api_key:
-    secure: cytkiEEp84H/1728jBRaqdTU61AEekwrP9h9vPCE6rFlQxptOIFOVTQTC9RekAtoRfa9vDWgiNOEcKk+MCXYitn1tHt03YfrvMSdgCWq2X1hrPfxKoe5C/YNee5rfm7Hk+L0IoagwA3f4gEf8RKUHhO3s2lRrCWxz5I0T6G5Wmy+8d5jbHTa3MrjN0jupE7lv9mNBcLVJkp8EYMernn+9xfkNcexKcbqGNCaqrO3G6HVw9+YCbDuLqzpPnsOWUJ4kM8/NEbkSxFaCyj3/iU7jpCNIXLC7Ca1jMJ4k45KY7oxLxqYhwwvUU0/XGCLu5MHgXDFZpGRWpoEamLoBGRWGgpGOtNH4v0dxJDK+JHmNFyxoAc+m2YiKqKXMIqAKsMUvuaNHDszlzfSs7j0KoCdWYBZLGgMdvTeuiAwCOlAUutiB1Y1OJjM0CHhb5r8qb5f7z7s+HHnAy3AC8VbHjwdeeAtwydE3Noai0EMTocrbFTPJ2u+ewqSx6kRbXK0QGir1FZBjKQpnhNwXSgmmr5tLWfh1gogvlS4QcCCtAOZv9T9mHwz5Ha8YVbUafqUMtN0r3aTEETeZfGvAnHgW+lffxYC38QkB1PuD97kVNHqarCOSIyAzE8JhklHhwymAIf3CHvHYud/VIZtT93s+RKSMNRY8fN8szGyxz6tLA8cuZc=
-    app: top-vinyl-frontend
-    skip_cleanup: true
-    on:
-      branch: master
+    secure: cu8EhPS2SCrLRf9fBxkDTXP4vtTGW576TL0xm9C+valYNwqsHx7A8h7OKFc+pDPOHlHMT7FHfYR/Qc88FZCAunU6njMDaGDdd8525zrDkJf5kfEaQXutLd6OOZpArcp7R1wHsAfj6PY72mEeFmcUnTPesVV/VO4p/2yvpMkgSdDMLHyRIcNRBppJxPK1Rwp89srmMUscV5BICH0wajgGAOsYJNprNRbPQDuoirkHXAOJ6eQi1iI7Gc0+7JiQYs+zUrUHCSlFc6L2CPWVlndx6NG/fvAzsWrgiHscbwZkpuQQws/tFerHi8LMFNpvv6HgPBznefWRLneiKeuETUIygpxnCRHQJgJiWjA8qQnxoGcSwVR60INuPVQ0n1tWghvqdATXE9Qbn+t4w2kIIXCKlO4S0RdZaT6Y/6RTs+ONiMW13pKjbuRI1THTY5WZjklhqpxejkDxK6JcF31s/7azHmFX8qe/MApnsKiSKVo0YCLjz5uMzgnT63CjcC1a4+QgCXJCuMJBHrJO2OQiEC5/eZLu+wMy3hkwAOqxyZr1s14mo4oiDdGuKBUkMyW+GMoVH/wPwL9OdY1ceTJpFXUEZ0HGfERh+i30hb6tnNtX3N1kHSmFu/4wW/cNmP37tiyemJ0cs01r3C3lZEy3XGuQvfNIeSLsoc6YkJ46QBgDhQA=
