@@ -302,9 +302,23 @@ describe('App', () => {
         album: 'this'
       })
       wrapper.instance().displayNewAlbums()
-      
+
       expect(wrapper.state().album).toEqual('')
       expect(spy).toHaveBeenCalled()
+    })
+  })
+
+  describe('toggleDisplay', () => {
+    it('should set the state of displayTracks to the opposite', () => {
+      const wrapper = shallow(<App />)
+
+      wrapper.instance().toggleDisplay()
+
+      expect(wrapper.state().displayTracks).toEqual(true)
+
+      wrapper.instance().toggleDisplay()
+
+      expect(wrapper.state().displayTracks).toEqual(false)
     })
   })
 })
