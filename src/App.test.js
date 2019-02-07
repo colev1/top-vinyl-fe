@@ -261,4 +261,34 @@ describe('App', () => {
       expect(wrapper.state().rating).toEqual(expected)
     })
   })
+
+  describe('handleSubmit', () => {
+    it('should call fetch with the correct params', () => {
+      const wrapper = shallow(<App />)
+      const mockAlbum = {
+        name: 'This Album'
+      }
+      const mockNewAlbum = {
+        id: 27
+      }
+      const mockEvent = {
+        preventDefault: () => {}
+      }
+      const mockOptions = {
+        method: 'POST',
+        body: JSON.stringify(mockAlbum),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+      window.fetch = jest.fn().mockImplementation(
+        () => Promise.resolve({
+          json: () => Promise.resolve(mockNewAlbum),
+          ok: true
+        })
+      )
+
+      wrapper.instance().handleSubmit(mockEvent)
+    })
+  })
 })
