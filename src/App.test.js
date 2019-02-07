@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme';
 import AlbumContainer from './AlbumContainer.js'
+const path = require('path');
+const dotEnvPath = path.resolve('./.env');
+require('dotenv').config({ path: dotEnvPath})
 
 describe('App', () => {
   let wrapper

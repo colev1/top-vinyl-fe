@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme';
 import Album from './Album.js'
+const path = require('path');
+const dotEnvPath = path.resolve('./.env');
+require('dotenv').config({ path: dotEnvPath})
 
 describe('Album', () => {
   let mockId
