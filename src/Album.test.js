@@ -40,7 +40,7 @@ describe('Album', () => {
 
   describe('fetchTracks', () => {
     it('should call fetch with the correct params', () => {
-      const mockTracks = [{name: 'this track'}]
+      const mockTracks = [{name: 'this track', id: 3}]
       const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1/tracks'
       window.fetch = jest.fn().mockImplementation(
         () => Promise.resolve({
@@ -57,7 +57,7 @@ describe('Album', () => {
 
   describe('fetchAlbum', () => {
     it('should call fetch with the correct params', () => {
-      const mockAlbum = [{name: 'this album'}]
+      const mockAlbum = [{name: 'this album', id: 2}]
       const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1'
       window.fetch = jest.fn().mockImplementation(
         () => Promise.resolve({
@@ -74,10 +74,10 @@ describe('Album', () => {
 
   describe('displayTracks', () => {
     it('should set state', () => {
-      const mockTracks = [{name: 'this track'}]
+      const mockTracks = [{name: 'this track', id: 2}]
       const mockId = 1
       const mockToggle = jest.fn()
-      const wrapper = shallow(<Album albumId={ mockId } tiggleDisplay={ mockToggle } />)
+      const wrapper = shallow(<Album albumId={ mockId } toggleDisplay={ mockToggle } />)
       
       wrapper.instance().displayTracks(mockTracks)
   

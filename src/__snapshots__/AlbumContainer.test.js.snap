@@ -10,6 +10,7 @@ ShallowWrapper {
           "album": "This Album",
           "artist": "This Artist",
           "genre": "Pop",
+          "id": 0,
           "rating": "3.33",
           "year": "1991",
         },
@@ -66,7 +67,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -209,7 +210,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "host",
           "props": Object {
             "children": Array [

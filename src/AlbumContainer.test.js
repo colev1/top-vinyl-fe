@@ -19,7 +19,8 @@ describe('AlbumContainer', () => {
       artist: 'This Artist',
       year: '1991',
       rating: '3.33',
-      genre: 'Pop'
+      genre: 'Pop',
+      id: 0
     }]
     wrapper = shallow(<AlbumContainer
       albums={ mockAlbums }
