@@ -5,13 +5,18 @@
 ### Description of App:
 This is a react app that utilizes a seperate backend database to view and edit information about albums and tracks. The backend is fetched from heroku.  The application is deployed on Heroku, and continuous integration is setup using Travis CI.
 
-![Deployed Application](https://top-vinyl-frontend.herokuapp.com/)
+[Deployed Application](https://top-vinyl-frontend.herokuapp.com/)
 
 ### Technologies used:
 * React
 * Enzyme
 * CSS
 * dotEnv
+
+[Backend Repo](https://github.com/jarushford/top-vinyl)
+[Deployed Backend](https://top-vinyl.herokuapp.com/)
+
+
 
 ### Setup:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
