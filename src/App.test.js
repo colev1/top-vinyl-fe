@@ -291,4 +291,20 @@ describe('App', () => {
       wrapper.instance().handleSubmit(mockEvent)
     })
   })
+
+  describe('displayNewAlbums', () => {
+    it('should call fetchAlbums and setState', () => {
+      const wrapper = shallow(<App />)
+      const spy = jest.spyOn(wrapper.instance(), 'fetchAlbums')
+      wrapper.instance().forceUpdate()
+      
+      wrapper.setState({
+        album: 'this'
+      })
+      wrapper.instance().displayNewAlbums()
+      
+      expect(wrapper.state().album).toEqual('')
+      expect(spy).toHaveBeenCalled()
+    })
+  })
 })
