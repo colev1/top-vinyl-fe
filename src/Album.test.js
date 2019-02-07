@@ -41,12 +41,29 @@ describe('Album', () => {
       const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1/tracks'
       window.fetch = jest.fn().mockImplementation(
         () => Promise.resolve({
-          json: () => Promise.resolve(mockTacks),
+          json: () => Promise.resolve(mockTracks),
           ok: true
         })
       )
       
       wrapper.instance().fetchTracks()
+
+      expect(window.fetch).toHaveBeenCalledWith(mockUrl)
+    })
+  })
+
+  describe('fetchAlbum', () => {
+    it('should call fetch with the correct params', () => {
+      const mockAlbum = [{name: 'this album'}]
+      const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1'
+      window.fetch = jest.fn().mockImplementation(
+        () => Promise.resolve({
+          json: () => Promise.resolve(mockTacks),
+          ok: true
+        })
+      )
+      
+      wrapper.instance().fetchAlbum()
 
       expect(window.fetch).toHaveBeenCalledWith(mockUrl)
     })
