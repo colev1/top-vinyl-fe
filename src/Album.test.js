@@ -58,7 +58,7 @@ describe('Album', () => {
       const mockUrl = 'https://top-vinyl.herokuapp.com/api/v1/albums/1'
       window.fetch = jest.fn().mockImplementation(
         () => Promise.resolve({
-          json: () => Promise.resolve(mockTacks),
+          json: () => Promise.resolve(mockAlbum),
           ok: true
         })
       )
@@ -67,5 +67,16 @@ describe('Album', () => {
 
       expect(window.fetch).toHaveBeenCalledWith(mockUrl)
     })
+  })
+
+  describe('displayTracks', () => {
+    const mockTracks = [{name: 'this track'}]
+    const mockId = 1
+    const mockToggle = jest.fn()
+    const wrapper = shallow(<Album albumId={ mockId } tiggleDisplay={ mockToggle } />)
+    
+    wrapper.instance().displayTracks(mockTracks)
+
+    expect(wrapper.state().tracks).toEqual(mockTracks)
   })
 })
