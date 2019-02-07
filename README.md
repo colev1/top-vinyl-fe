@@ -13,8 +13,8 @@ This is a react app that utilizes a seperate backend database to view and edit i
 * CSS
 * dotEnv
 
-[Backend Repo](https://github.com/jarushford/top-vinyl)
-[Deployed Backend](https://top-vinyl.herokuapp.com/)
+* [Backend Repo](https://github.com/jarushford/top-vinyl)
+* [Deployed Backend](https://top-vinyl.herokuapp.com/)
 
 
 
