@@ -321,4 +321,18 @@ describe('App', () => {
       expect(wrapper.state().displayTracks).toEqual(false)
     })
   })
+
+  describe('routeHome', () => {
+    it('should change the state of displayTracks to false', () => {
+      const wrapper = shallow(<App />)
+
+      wrapper.setState({
+        displayTracks: true
+      })
+
+      wrapper.instance().routeHome()
+
+      expect(wrapper.state().displayTracks).toEqual(false)
+    })
+  })
 })
